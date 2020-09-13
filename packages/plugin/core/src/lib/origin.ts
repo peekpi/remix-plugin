@@ -4,9 +4,10 @@ import { PluginOptions } from "./client"
 export const remixOrgins = 'https://gist.githubusercontent.com/EthereumRemix/091ccc57986452bbb33f57abfb13d173/raw/3367e019335746b73288e3710af2922d4c8ef5a3/origins.json'
 
 /** Fetch the default origins for remix */
-export async function getOriginsFromUrl(url: string) {
-  const res = await fetch(url)
-  return res.json()
+export async function getDefaultOrigins() {
+  //const res = await fetch('https://raw.githubusercontent.com/ethereum/remix-plugin/master/projects/client/assets/origins.json')
+  //return res.json()
+  return [];
 }
 
 /** Get all the origins */
